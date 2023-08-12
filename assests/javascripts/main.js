@@ -15,4 +15,5 @@ $(document).ready(function(){
     $(".type-effect1").typed({
         strings: ["Aspiring to make a mark in the field of Computer Science where my learnings are translated into performance, ensuring mutual growth. Willing to join a growing organization and exhibit my full potential. "],
     });
-});
+}); 
+  

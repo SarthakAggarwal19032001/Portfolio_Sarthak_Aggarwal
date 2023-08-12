@@ -22,6 +22,8 @@
 }
 
 #main-nav{
+    padding-left: 1px;
+    padding-right: 1px;
     width: 1260px;
     margin: 0 auto 20px;
     background-color: rgb(48, 45, 45);
@@ -35,6 +37,7 @@
     justify-content: space-evenly;
 }
 #main-nav ul li{
+    font-size: 0.863em;
     width: 100%;
     text-align: center;
 }
@@ -131,23 +134,28 @@
 .intro a{
     color: var(--btn-text-color);
 }
-.intro ul.li-grid{
+.intro ul{
     margin: 0px;
     padding: 0px;
     list-style: none;
-    display: grid;
-    font-size: 0.9em;
+    display: flex;
+    justify-content:center;
+    font-size: 1em;
+    color: wheat;
+    padding-bottom: 5px;
 }
-.intro ul.li-grid li{
-    padding-bottom: 4px;
+.intro ul i{
+  padding-right: 10px;
 }
+
 .intro ul.li-flex{
     margin: 0px;
     padding: 0px;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    font-size: 0.9em;
+    font-size: 1em;
+    font-size: larger;
 }
 @media(max-width: 1200px){
     .intro ul.li-grid{
@@ -215,7 +223,7 @@
 }
 
 
-#education, #skills, #projects, #contact{
+#education, #skills, #projects, #contact, #publication{
     padding: 50px;
     position: absolute;
     z-index: 10;
@@ -228,7 +236,7 @@
     transform: translateX(-100%) rotateY(180deg);
 }
 
-#education h2, #skills h2, #projects h2, #contact h2{
+#education h2, #skills h2, #projects h2, #contact h2, #publication h2{
     padding-bottom: 20px;
     margin-bottom: 30px;
     border-bottom: 2px solid #b4e2ed;
@@ -599,10 +607,86 @@
     transform: scale(1.1, 1.1);
 }
 
+/* Publication */
+#publication img{
+  margin: 25px;
+  height: 18em;
+}
+#publication .card{
+  width: 100%;
+  height:100%;
+  background-color: black;
+}
+#publication .card-body{
+  color: white;
+  height: 100%;
+}
+#publication a{
+  margin-left: 10px;
+}
+#publication span{
+  color: aqua;
+  font-style: italic;
+
+}
+#publication ul li a{
+  margin-left: 0px;
+}
+#publication ul{
+    margin: 0px;
+    margin-top: 5px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#publication ul li img{
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 25px;
+}
+
+/* certificate */
+#publication .col-sm-6{
+  padding-bottom: 15px;
+}
+
+#publication .certificate ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: left;
+}
+#publication .certificate img{
+  height: 40px;
+  padding-right: 5px;
+  border-radius: 50%;
+}
+#publication .certificate .card-text{
+  margin-bottom: 0px;
+}
+
+#publication .certificate .issued{
+    font-size: small;
+    font-style: italic;
+    color: #488c6c;
+}
+
+/* Contact Us */
+
+#contact span{
+  color: red;
+  font-size: 1em;
+    padding-left: 5px;
+}
+
 #home.show,
 #education.show,
 #skills.show,
 #projects.show,
+#publication.show,
 #contact.show{
     transform: translateX(0%) rotateY(0deg);
 }
